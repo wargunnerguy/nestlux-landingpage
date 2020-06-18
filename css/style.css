@@ -2,13 +2,13 @@
 body {
   font-family: 'Comfortaa', cursive;
   background: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
-  color: #666;
+  color: #000000;
   line-height: 25px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -748,6 +748,7 @@ header.page-header .main-menu.minified{
 	left: 0;
 	right: 0;
 	background: rgba(5, 27, 41, 0.64);
+	cursor: default;
 }
 
 .main-slides h1.slider-text-big{
