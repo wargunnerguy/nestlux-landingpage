@@ -371,24 +371,24 @@
                 <div class="contact-form wow bounceInRight">
 
                     <!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
-                    <form class="gform" name="sentMessage" id="contactForm"
+                    <form class="gform" name="sentMessage" id="contactForm" method="POST"
                           action="https://script.google.com/macros/s/AKfycbxH4Cxo1tB8czh_M6Xdk8mzg9Nr_b0c0RZfiTYW/exec"
                           novalidate>
                         <div class="col-md-6">
                             <input type="text" class="form-control"
-                                   placeholder="Täisnimi" id="name" required
+                                   placeholder="Täisnimi" id="name" name="name" required
                                    data-validation-required-message="Palun sisesta oma täisnimi"/>
                             <p class="help-block"></p>
                         </div>
                         <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email"
+                            <input type="email" class="form-control" name="email" placeholder="Email"
                                    id="email" required
                                    data-validation-required-message="Palun sisesta oma email"/>
                         </div>
 
                         <div class="col-md-12">
 		<textarea rows="10" cols="100" class="form-control"
-                  placeholder="Sõnum" id="message" required
+                  placeholder="Sõnum" id="message" name="message" required
                   data-validation-required-message="Please enter your message" minlength="5"
                   data-validation-minlength-message="Min 5 characters"
                   maxlength="999" style="resize:none"></textarea>
