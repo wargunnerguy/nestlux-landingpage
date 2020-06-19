@@ -372,8 +372,7 @@
 
                     <!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
                     <form class="gform" name="sentMessage" id="contactForm" method="POST"
-                          action="https://script.google.com/macros/s/AKfycbxH4Cxo1tB8czh_M6Xdk8mzg9Nr_b0c0RZfiTYW/exec"
-                          novalidate>
+                          action="https://script.google.com/macros/s/AKfycbw_uRPcXpMLt3-_Xl2zlVicy_2bwPRcwnn-o3UZjONjhbnCWY0/exec">
                         <div class="col-md-6">
                             <input type="text" class="form-control"
                                    placeholder="Täisnimi" id="name" name="name" required
@@ -382,8 +381,7 @@
                         </div>
                         <div class="col-md-6">
                             <input type="email" class="form-control" name="email" placeholder="Email"
-                                   id="email" required
-                                   data-validation-required-message="Palun sisesta oma email"/>
+                                   id="email" required data-validation-required-message="Palun sisesta oma email"/>
                         </div>
 
                         <div class="col-md-12">
@@ -396,7 +394,7 @@
 
                         <div class="col-md-4 col-md-offset-5"><br>
                             <div id="success"></div>
-                            <button type="Saada" class="btn btn-primary">Küsi pakkumist</button>
+                            <button type="submit" value="Küsi pakkumist" class="btn btn-primary">Küsi pakkumist</button>
                         </div>
                         <div style="display:none" class="thankyou_message">
                             <!-- You can customize the thankyou message by editing the code below -->
@@ -467,6 +465,6 @@
 <script src="contact/jqBootstrapValidation.js"></script>
 <script src="contact/contact_me.js"></script>
 <script src="js/custom.js"></script>
-<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 </body>
 </html>
