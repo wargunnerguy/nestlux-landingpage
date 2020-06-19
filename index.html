@@ -371,7 +371,9 @@
                 <div class="contact-form wow bounceInRight">
 
                     <!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form class="gform" name="sentMessage" id="contactForm"
+                          action="https://script.google.com/macros/s/AKfycbxH4Cxo1tB8czh_M6Xdk8mzg9Nr_b0c0RZfiTYW/exec"
+                          novalidate>
                         <div class="col-md-6">
                             <input type="text" class="form-control"
                                    placeholder="Täisnimi" id="name" required
@@ -395,6 +397,11 @@
                         <div class="col-md-4 col-md-offset-5"><br>
                             <div id="success"></div>
                             <button type="Saada" class="btn btn-primary">Küsi pakkumist</button>
+                        </div>
+                        <div style="display:none" class="thankyou_message">
+                            <!-- You can customize the thankyou message by editing the code below -->
+                            <h2><em>Tänud</em>, võtame esimesel võimalusel ühendust!
+                            </h2>
                         </div>
                     </form>
                 </div>
@@ -460,6 +467,6 @@
 <script src="contact/jqBootstrapValidation.js"></script>
 <script src="contact/contact_me.js"></script>
 <script src="js/custom.js"></script>
-
+<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 </body>
 </html>
